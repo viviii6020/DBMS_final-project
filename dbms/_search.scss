@@ -1,0 +1,86 @@
+// search.scss開始
+// 搜尋框(search-container)css開始
+.search-container{
+    width: 900px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding: 50px 60px 40px;
+    color: white;
+
+    h2{
+        font-weight: bold;
+    }
+
+    .form-check{
+        // 當條件選項被點擊時字體加粗+變黃色
+        input[type="radio"]:checked+label{
+            font-weight: bolder; 
+            color: rgb(255, 230, 0);
+        }
+
+        .form-check-label{
+            // 條件選項文字樣式
+            font-size: 18px;
+        }
+
+    }
+
+    .srh-btn{
+        display: block;
+        // 搜尋按鈕
+        color: rgb(190, 189, 189);
+        &:hover{
+            color: rgb(244, 197, 197);
+            font-weight: bolder; 
+        }
+        
+    }
+
+}// 搜尋框(search-container)css結束
+
+.form-control{
+    // 搜尋輸入框大小
+    height: 50px;
+}
+
+#mem_search, #pos_search, .costBar, .collectBar{
+    display: none;
+}
+
+#costRange, #collectRange{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 230, 0);
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+// search.scss結束

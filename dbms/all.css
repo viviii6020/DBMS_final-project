@@ -1,0 +1,714 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  main.scss開始
+    基本樣式、共同樣式、排版標籤......
+    為了不寫太多重複的css
+    我全部都放在main.scss這邊了
+    要用的話可以加在html那邊的class裡 */
+*, *:brfore, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.m0-a {
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.pl-8 {
+  padding-left: 8px;
+}
+
+.pr-8 {
+  padding-right: 8px;
+}
+
+.pl-16 {
+  padding-left: 16px;
+}
+
+.pl-32 {
+  padding-left: 32px;
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+.pr-32 {
+  padding-right: 32px;
+}
+
+.pt-8 {
+  padding-top: 8px;
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+
+.pt-48 {
+  padding-top: 48px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-fe {
+  justify-content: flex-end;
+}
+
+.jc-se {
+  justify-content: space-evenly;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.fz-30 {
+  font-size: 30px;
+}
+
+.fz-24 {
+  font-size: 24px;
+}
+
+.w-72px {
+  width: 72px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.headerBg-w {
+  background: white;
+  z-index: 0;
+}
+
+.browse {
+  font-size: 10px;
+  padding-left: 8px;
+}
+
+.btn-sreach {
+  height: auto;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 32px;
+}
+.post-list li {
+  width: 25%;
+}
+
+.footer {
+  border-top: solid 1px #c9c9c9;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+.footer img {
+  width: 80px;
+}
+.footer h4 {
+  margin-bottom: 26px;
+}
+.footer a {
+  color: #f05f5c;
+  text-decoration: none;
+}
+.footer ul {
+  list-style: none;
+  flex-wrap: wrap;
+}
+.footer li {
+  margin-bottom: 10px;
+  width: 34%;
+}
+.footer li a {
+  color: #707070;
+  text-decoration: none;
+}
+
+/*main.scss結束*/
+/*post.scss開始*/
+.main {
+  padding: 80px 0px;
+  background: rgb(248, 248, 248);
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+.upper {
+  position: relative;
+  border-bottom: black solid 1px;
+  text-align: center;
+}
+
+.innertext {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+.innertext h4 {
+  color: red;
+}
+.innertext span {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+.p-img {
+  max-width: 95%;
+  height: auto;
+  border-radius: 20px;
+  padding-top: 8px;
+  margin-bottom: 16px;
+}
+
+.outer {
+  background-color: white;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.lower {
+  padding: 6px 20px 20px 20px;
+}
+.lower h3 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  margin-top: 12px;
+}
+
+.p-detail {
+  color: black;
+  text-decoration: none;
+}
+
+/*post.scss結束*/
+/*postDetail.scss開始*/
+.detail-container img {
+  width: 300px;
+}
+
+.detail-content {
+  color: darkgrey;
+}
+.detail-content .title {
+  font-weight: bolder;
+  font-size: 24px;
+}
+.detail-content .context {
+  margin-top: 20px;
+  color: black;
+}
+
+/*postDetsil.scss結束*/
+.detail-wrap {
+  position: relative;
+}
+.detail-wrap .collect-btn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+/*addindex.scss開始*/
+@media screen and (min-width: 40em) {
+  body body {
+    font-size: 1.25em;
+  }
+}
+
+.form .button, .form .message, .customSelect, .form .select, .form .textarea, .form .text-input, .form .checkbox-input + label, .form .label {
+  /*選項外框*/
+  padding: 0.75em 1em;
+  outline: none;
+  line-height: normal;
+  border-radius: 0;
+  border: none;
+  background: none;
+  display: block;
+}
+
+.form {
+  z-index: 0;
+  max-width: 40em;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.form .label {
+  /*標題字型顏色及大小*/
+  font-weight: bold;
+  color: #222222;
+  padding-top: 0;
+  padding-left: 0;
+  letter-spacing: 0.025em;
+  font-size: 1.125em;
+  line-height: 1.25;
+  position: relative;
+  z-index: 100;
+}
+.form .checkbox-input {
+  /*將勾選的地方移除*/
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.form .checkbox-input + label {
+  /*設置點擊前的外觀*/
+  display: inline-block;
+  width: auto;
+  color: gray;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.form .checkbox-input:checked + label {
+  background-color: #f05f5c;
+  color: white;
+}
+.form .button {
+  /*紅色按鈕*/
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  background: #E8474C;
+  color: white;
+  font-weight: bold;
+  width: auto;
+  margin-left: auto;
+  font-weight: bold;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.customSelect, .form .select, .form .textarea, .form .text-input, .form .checkbox-input + label {
+  font: inherit;
+  line-height: normal;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  position: relative;
+} /*選項字形顏色*/
+.form .field {
+  width: 100%;
+  margin: 0 0 1.5em 0;
+}
+
+@media screen and (min-width: 40em) {
+  .form .field.half {
+    width: calc(50% - 1px);
+  }
+}
+.form .field.last {
+  margin-left: auto;
+}
+
+.form .textarea {
+  max-width: 100%;
+}
+
+.form .checkboxes {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.form .checkbox {
+  float: left;
+  margin: 1px;
+}
+
+.form .filedhalfrequired {
+  font-weight: bold;
+  color: white;
+  padding-top: 0;
+  padding-left: 0;
+  letter-spacing: 0.025em;
+  font-size: 1.125em;
+  line-height: 1.25;
+  position: relative;
+  z-index: 100;
+} /*addindex.scss結束*/
+/*註冊register.scss開始*/
+.register_form {
+  width: 400px;
+  border-radius: 8px;
+  padding: 100px 40px 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  margin-bottom: 100px;
+}
+
+.register-btn {
+  width: 100%;
+}
+
+/*註冊register.scss結束*/
+/*index.scss開始*/
+#intro {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url(https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: 200px 0;
+  background-repeat: repeat left;
+}
+
+.container .index-content {
+  background: rgba(146, 141, 141, 0.5);
+}
+.container .index-content p {
+  font-weight: bolder;
+}
+.container .index-h1 {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/*index.scss結束*/
+/*帳戶資料memberInfo.scss開始*/
+.member-img {
+  display: block;
+}
+
+.memberInfo-content {
+  width: 500px;
+  margin: 0 auto;
+}
+.memberInfo-content .title {
+  font-size: 24px;
+  margin-top: 8px;
+}
+.memberInfo-content .context {
+  margin-top: 20px;
+  color: black;
+}
+
+/*帳戶資料memberInfo.scss結束*/
+.private-message {
+  width: 99%;
+}
+.private-message .private-message-list {
+  width: 99%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  padding: 10px 0 10px 20px;
+}
+.private-message .private-message-list a {
+  width: 1000px;
+  text-decoration: none;
+  color: black;
+}
+.private-message .private-message-list a:hover {
+  color: gray;
+}
+.private-message li {
+  align-items: center;
+}
+.private-message li p {
+  margin-bottom: 3px;
+}
+.private-message li .sender-container {
+  width: 98%;
+}
+.private-message li .sender-container .sender-name {
+  font-weight: bolder;
+}
+.private-message li .sender-container .send-time {
+  font-size: 16px;
+}
+
+.join-plan {
+  width: 100%;
+}
+
+.join-username {
+  display: block;
+}
+
+.container-jonimember-only {
+  position: relative;
+}
+
+.join-member-postname {
+  font-weight: bold;
+}
+
+.join-member {
+  width: 99%;
+}
+.join-member .join-member-list {
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  padding: 10px 0 10px 0px;
+  align-items: center;
+}
+.join-member .join-member-list a {
+  text-decoration: none;
+  color: black;
+}
+.join-member .join-member-list .join-member-container {
+  width: 950px;
+}
+.join-member .join-member-list .join-member-container p {
+  margin-bottom: 3px;
+}
+.join-member .join-member-list .join-member-container .join-member-name {
+  font-weight: bolder;
+}
+
+.search-container {
+  width: 900px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 50px 60px 40px;
+  color: white;
+}
+.search-container h2 {
+  font-weight: bold;
+}
+.search-container .form-check input[type=radio]:checked + label {
+  font-weight: bolder;
+  color: rgb(255, 230, 0);
+}
+.search-container .form-check .form-check-label {
+  font-size: 18px;
+}
+.search-container .srh-btn {
+  display: block;
+  color: rgb(190, 189, 189);
+}
+.search-container .srh-btn:hover {
+  color: rgb(244, 197, 197);
+  font-weight: bolder;
+}
+
+.form-control {
+  height: 50px;
+}
+
+#mem_search, #pos_search, .costBar, .collectBar {
+  display: none;
+}
+
+#costRange, #collectRange {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 230, 0);
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}/*# sourceMappingURL=all.css.map */

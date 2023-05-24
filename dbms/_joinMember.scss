@@ -1,0 +1,38 @@
+// joinMember.scss開始
+.container-jonimember-only{
+    position: relative;
+}
+.join-member-postname{
+    font-weight: bold;
+}
+.join-member{
+    width: 99%;
+    .join-member-list{ 
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+        padding: 10px 0 10px 0px;
+        align-items: center;
+       
+        a{
+            text-decoration: none;
+            color: black; 
+        }
+        .join-member-container{
+            width: 950px;
+            p{
+                margin-bottom: 3px;
+            }
+
+            .join-member-name{
+                font-weight: bolder;
+            }
+        }
+ 
+    }
+    
+}
+
+
+// joinMember.scss結束

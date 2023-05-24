@@ -1,0 +1,29 @@
+/*postDetail.scss開始*/
+.detail-container{
+    
+    img{
+        width: 300px;
+    }
+    
+}
+.detail-content{
+    color: darkgrey;
+    .title{
+        font-weight: bolder;
+        font-size: 24px;
+    }
+    .context{
+        margin-top: 20px;
+        color: black;
+    }
+    
+}/*postDetsil.scss結束*/
+.detail-wrap{
+    position: relative;
+    .collect-btn{
+        position: absolute;
+        top: 0;
+        right: 30px;
+        
+    }
+}

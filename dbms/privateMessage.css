@@ -1,0 +1,9 @@
+.private-message {
+  width: 200px;
+  height: auto;
+  background-color: white;
+  padding: 8px 20px;
+}
+.private-message img {
+  width: 50px;
+}/*# sourceMappingURL=privateMessage.css.map */

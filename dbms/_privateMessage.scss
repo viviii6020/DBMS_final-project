@@ -1,0 +1,41 @@
+// private message.scss開始
+.private-message{
+    width: 99%;
+    .private-message-list{
+        width: 99%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+        padding: 10px 0 10px 20px;         
+        a{
+            width: 1000px;
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: gray;
+            }
+        }
+    }
+    li{
+        align-items: center;
+        p{
+            margin-bottom: 3px;
+        }
+
+        .sender-container{
+            width: 98%;
+            .sender-name{
+                font-weight: bolder;
+            }
+
+            .send-time{
+                font-size: 16px;
+            }
+        }
+        
+    }
+    
+}
+
+
+// private message.scss結束

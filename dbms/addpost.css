@@ -1,0 +1,143 @@
+
+  body {
+    background-color: #111111;
+    font-family: "Titillium Web", sans-serif;
+  }
+  @media screen and (min-width: 40em) {
+    body {
+      font-size: 1.25em;
+    }
+  }
+  
+  .form .button, .form .message, .customSelect, .form .select, .form .textarea, .form .text-input, .form .checkbox-input + label, .form .label {
+    padding: 0.75em 1em;
+    
+    outline: none;
+    line-height: normal;
+    border-radius: 0;
+    border: none;
+    background: none;
+    display: block;
+  }/*選項外框*/
+  
+  .form .label {
+    font-weight: bold;
+    color: white;
+    padding-top: 0;
+    padding-left: 0;
+    letter-spacing: 0.025em;
+    font-size: 1.125em;
+    line-height: 1.25;
+    position: relative;
+    z-index: 100;
+  }/*標題字型顏色及大小*/
+  
+  .customSelect, .form .select, .form .textarea, .form .text-input, .form .checkbox-input + label {
+    font: inherit;
+    line-height: normal;
+    width: 100%;
+    box-sizing: border-box;
+    background: #222222;
+    color: white;
+    position: relative;
+  }/*選項字形顏色*/
+  
+   .form .checkbox-input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }/*將勾選的地方移除*/
+   .form .checkbox-input + label {
+    display: inline-block;
+    width: auto;
+    color: #4E4E4E;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+  }/*設置點擊前的外觀*/
+  .form .checkbox-input:focus + label, .form .checkbox-input:active + label {
+    color: #4E4E4E;
+  }
+  .form .checkbox-input:checked + label {
+    color: white;
+  }
+  
+  .form .button {
+    font: inherit;
+    line-height: normal;
+    cursor: pointer;
+    background: #E8474C;
+    color: white;
+    font-weight: bold;
+    width: auto;
+    margin-left: auto;
+    font-weight: bold;
+    padding-left: 2em;
+    padding-right: 2em;
+  }/*紅色按鈕*/
+  
+
+  
+  body {
+    padding: 2em;
+  }
+  
+  .form {
+    max-width: 40em;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .form .field {
+    width: 100%;
+    margin: 0 0 1.5em 0;
+  }
+  @media screen and (min-width: 40em) {
+    .form .field.half {
+      width: calc(50% - 1px);
+    }
+  }
+  .form .field.last {
+    margin-left: auto;
+  }
+  .form .textarea {
+    max-width: 100%;
+  }
+  
+
+  .form .checkboxes {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  .form .checkbox{
+    float: left;
+    margin: 1px;
+  }
+
+  .form .filedhalfrequired{
+    font-weight: bold;
+    color: white;
+    padding-top: 0;
+    padding-left: 0;
+    letter-spacing: 0.025em;
+    font-size: 1.125em;
+    line-height: 1.25;
+    position: relative;
+    z-index: 100;
+  }
+ 
+  
+  
